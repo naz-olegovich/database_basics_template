@@ -1,4 +1,4 @@
 # Розділ документації
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
-
+- [Аналіз предметної області](https://github.com/naz-olegovich/media_content_analysis_system/blob/our_branch/docs/requirements/stakeholders-needs.md)
+- [Запити зацікавлених осіб](https://github.com/naz-olegovich/media_content_analysis_system/blob/our_branch/docs/requirements/state-of-the-art.md)

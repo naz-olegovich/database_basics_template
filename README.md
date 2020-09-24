@@ -1,5 +1,6 @@
-# Media content analysissystem
+# Media content analysis system
 Repository for laboratory works on the course "Organization of databases"
+<br />
 <br />
 ## Contributors
 |**Name**|**Gmail**|**Telegram**|

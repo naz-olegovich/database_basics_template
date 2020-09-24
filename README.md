@@ -1,7 +1,5 @@
-# Система аналізу медіа-контенту
-
-Шаблон репозиторію для виконання лабораторних робіт з курсу "Організація баз даних"
-<br />
+# Media content analysissystem
+Repository for laboratory works on the course "Organization of databases"
 <br />
 ## Contributors
 |**Name**|**Gmail**|**Telegram**|

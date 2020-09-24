@@ -4,7 +4,7 @@
 <br />
 <br />
 ## Contributors
-Богомол Владислав: vbogomol11@gmail.com<br />
+|Богомол Владислав| vbogomol11@gmail.com|<br />
 Бузулук Марія: mashundra2002@gmail.com<br />
 Василенко Богдан: bogdan.vasilenko.2002@gmail.com<br />
 Каптур Максим: student.fiot.9112@gmail.com<br />

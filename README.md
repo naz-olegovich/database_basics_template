@@ -4,6 +4,8 @@
 <br />
 <br />
 ## Contributors
+|Name|Gmail|
+|---------------------|-------------------------------|
 |**Богомол Владислав**| vbogomol11@gmail.com|
 
 |**Бузулук Марія**| mashundra2002@gmail.com|

@@ -1,5 +1,6 @@
 # Media content analysis system
 Repository for laboratory works on the course "Organization of databases"
+<br />
 [Теми проєктів](./guidelines/themes.md)
 
 [Методичні вказівки](./guidelines/guidelines.md)

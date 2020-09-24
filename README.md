@@ -3,6 +3,7 @@
 Шаблон репозиторію для виконання лабораторних робіт з курсу "Організація баз даних"
 <br />
 <br />
+## Contributors
 Богомол Владислав: vbogomol11@gmail.com<br />
 Бузулук Марія: mashundra2002@gmail.com<br />
 Василенко Богдан: bogdan.vasilenko.2002@gmail.com<br />

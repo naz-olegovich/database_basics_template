@@ -3,7 +3,8 @@ Repository for laboratory works on the course "Organization of databases"
 
 <br />
 <br />
-## Contributors
+
+# Contributors
 
 |**Name**|**Gmail**|**Telegram**|
 |-------------------|-------------------------------|-----------|

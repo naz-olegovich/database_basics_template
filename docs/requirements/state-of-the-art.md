@@ -59,11 +59,9 @@
 **[ELK Stack](https://www.guru99.com/elk-stack-tutorial.html#:~:text=The%20ELK%20Stack%20is%20a,as%20processing%20and%20storing%20logs)** - являє собою набір з трьох продуктів з відкритим вихідним кодом - Elasticsearch, Logstash і Kibana. Всі вони розробляються, управляються і обслуговуються компанією Elastic. ELK Stack розроблений, щоб дозволити користувачам отримувати дані з будь-якого джерела в будь-якому форматі, а також шукати, аналізувати і візуалізувати ці дані в реальному часі.
 <br>
 
-<center><img src="https://github.com/naz-olegovich/media_content_analysis_system/blob/our_bracnh2/docs/requirements/diagram.png" style="width:70%;height:50%;"></center>
+<center>![Діаграма роботи сервісу](http://www.plantuml.com/plantuml/svg/fPEnJZCn3CVtF8Lrq_SDxGCme1vGf4fGJZqLPZTdqKYv12LEfVBqO7H36gAgg5lY_yzs7DkBo1WuZLQXPX-W7KRZflCsKb0xdzo0uGWDYWHzr_xhtjh_JQQi75D0pUP0iA4F7xXHsZiEtaBpijr0lzoyhkwNZHgGSOUHe6SVy9qop5dZ2EvMcUi3Ci8ZiTv3dtRn64jjxSE8rdmY6--Wft0mcZ9e_TJbLcj92ncXwNqAyJiT8ST2UgR180WWNkrFrRFReX0T29b-Vye99MubaGKibT9GPgr4htrHnIPeKVB9LO2oyDChp2uASQuhvyHhdOjMPpUHhmv--IzFStq3NOfxa75Ny_bSoIfTqCvi2wO9gozNnebRbPbIriMQiNn0TZuh_Ic7qF8ojI0tfD5-0G00)</center>
 
 <em>Шляхом поєднання цих технологій ми можемо досягнути нашої мети - розробити веб-сайт для професійнийного аналізу медіа контенту та забезпечити автоматичну обробку інформації.</em>
-
-![Діаграма роботи сервісу](http://www.plantuml.com/plantuml/svg/fPEnJZCn3CVtF8Lrq_SDxGCme1vGf4fGJZqLPZTdqKYv12LEfVBqO7H36gAgg5lY_yzs7DkBo1WuZLQXPX-W7KRZflCsKb0xdzo0uGWDYWHzr_xhtjh_JQQi75D0pUP0iA4F7xXHsZiEtaBpijr0lzoyhkwNZHgGSOUHe6SVy9qop5dZ2EvMcUi3Ci8ZiTv3dtRn64jjxSE8rdmY6--Wft0mcZ9e_TJbLcj92ncXwNqAyJiT8ST2UgR180WWNkrFrRFReX0T29b-Vye99MubaGKibT9GPgr4htrHnIPeKVB9LO2oyDChp2uASQuhvyHhdOjMPpUHhmv--IzFStq3NOfxa75Ny_bSoIfTqCvi2wO9gozNnebRbPbIriMQiNn0TZuh_Ic7qF8ojI0tfD5-0G00)
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 

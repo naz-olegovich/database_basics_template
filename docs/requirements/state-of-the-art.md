@@ -50,6 +50,7 @@
 **[Word2vec](https://code.google.com/archive/p/word2vec/)** - цей інструмент забезпечує ефективну реалізацію архітектур безперервного набору слів і скіп-грам для обчислення векторних уявлень слів. Ці уявлення можуть згодом використовуватися в багатьох додатках обробки природної мови і для подальших досліджень.
 <br>
 ![]( https://github.com/naz-olegovich/media_content_analysis_system/blob/our_bracnh2/docs/requirements/diagram.png)
+<img src="https://github.com/naz-olegovich/media_content_analysis_system/blob/our_bracnh2/docs/requirements/diagram.png" style="width:800px;height:300px;">
 
 <em>Шляхом поєднання цих технологій ми можемо досягнути нашої мети - розробити веб-сайт для професійнийного аналізу медіа контенту та забезпечити автоматичну обробку інформації.</em>
 

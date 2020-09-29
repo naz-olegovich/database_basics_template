@@ -63,6 +63,8 @@
 
 <em>Шляхом поєднання цих технологій ми можемо досягнути нашої мети - розробити веб-сайт для професійнийного аналізу медіа контенту та забезпечити автоматичну обробку інформації.</em>
 
+![Діаграма роботи сервісу](http://www.plantuml.com/plantuml/svg/fPEnJZCn3CVtF8Lrq_SDxGCme1vGf4fGJZqLPZTdqKYv12LEfVBqO7H36gAgg5lY_yzs7DkBo1WuZLQXPX-W7KRZflCsKb0xdzo0uGWDYWHzr_xhtjh_JQQi75D0pUP0iA4F7xXHsZiEtaBpijr0lzoyhkwNZHgGSOUHe6SVy9qop5dZ2EvMcUi3Ci8ZiTv3dtRn64jjxSE8rdmY6--Wft0mcZ9e_TJbLcj92ncXwNqAyJiT8ST2UgR180WWNkrFrRFReX0T29b-Vye99MubaGKibT9GPgr4htrHnIPeKVB9LO2oyDChp2uASQuhvyHhdOjMPpUHhmv--IzFStq3NOfxa75Ny_bSoIfTqCvi2wO9gozNnebRbPbIriMQiNn0TZuh_Ic7qF8ojI0tfD5-0G00)
+
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
 |Вимоги| Критерії | Semantrum | Neticle | YouScan |

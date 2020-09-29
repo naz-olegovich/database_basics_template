@@ -1,6 +1,5 @@
 # Media content analysis system
-Repository for laboratory works on the course "Organization of databases"
-
+Репозиторій для лабораторних робіт з Організації баз даних
 <br />
 <br />
 

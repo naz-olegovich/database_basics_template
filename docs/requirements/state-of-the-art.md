@@ -53,7 +53,7 @@
 **[Elasticsearch](https://uk.wikipedia.org/wiki/Elasticsearch)** - пошуковий сервер, розроблений на базі Lucene. Надає розподілений, повнотекстовий пошуковий рушій з HTTP веб-інтерфейсом і підтримкою безсхемних JSON документів.Є найбільш популярним пошуковим рішенням, може використовуватись для індексування та пошуку будь-яких типів документів. Він надає масштабовний пошук, має пошук близький до реального часу і підтримку мультиарендності.
 <br>
 <br>
-**[Sphinx](https://uk.wikipedia.org/wiki/Sphinx_(%D0%BF%D0%BE%D1%88%D1%83%D0%BA%D0%BE%D0%B2%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0)** - система повнотекстового пошуку. Відмінною особливістю є висока швидкість індексації та пошуку, а також інтеграція з існуючими СУБД (MySQL, PostgreSQL) та наявність API для поширених мов веб-програмування (офіційно підтримуються PHP, Python, Java.
+**[Sphinx](https://uk.wikipedia.org/wiki/Sphinx_(%D0%BF%D0%BE%D1%88%D1%83%D0%BA%D0%BE%D0%B2%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0))** - система повнотекстового пошуку. Відмінною особливістю є висока швидкість індексації та пошуку, а також інтеграція з існуючими СУБД (MySQL, PostgreSQL) та наявність API для поширених мов веб-програмування (офіційно підтримуються PHP, Python, Java.
 <br>
 <br>
 **[ELK Stack](https://www.guru99.com/elk-stack-tutorial.html#:~:text=The%20ELK%20Stack%20is%20a,as%20processing%20and%20storing%20logs)** - являє собою набір з трьох продуктів з відкритим вихідним кодом - Elasticsearch, Logstash і Kibana. Всі вони розробляються, управляються і обслуговуються компанією Elastic. ELK Stack розроблений, щоб дозволити користувачам отримувати дані з будь-якого джерела в будь-якому форматі, а також шукати, аналізувати і візуалізувати ці дані в реальному часі.
@@ -119,6 +119,6 @@
 
 [Elasticsearch](https://uk.wikipedia.org/wiki/Elasticsearch)
 
-[Sphinx](https://uk.wikipedia.org/wiki/Sphinx_(%D0%BF%D0%BE%D1%88%D1%83%D0%BA%D0%BE%D0%B2%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0)
+[Sphinx](https://uk.wikipedia.org/wiki/Sphinx_(%D0%BF%D0%BE%D1%88%D1%83%D0%BA%D0%BE%D0%B2%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0))
 
 [ELK Stack](https://www.guru99.com/elk-stack-tutorial.html#:~:text=The%20ELK%20Stack%20is%20a,as%20processing%20and%20storing%20logs)

@@ -20,8 +20,7 @@
 
 ### Посилання
 
-** [Аналіз предметої області](https://github.com/naz-olegovich/media_content_analysis_system/blob/master/docs/requirements/state-of-the-art.md)
-
+**[Аналіз предметої області](https://github.com/naz-olegovich/media_content_analysis_system/blob/master/docs/requirements/state-of-the-art.md)
 
 ## Короткий зміст
 

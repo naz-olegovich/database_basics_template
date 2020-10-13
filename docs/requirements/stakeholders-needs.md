@@ -61,7 +61,7 @@
 #### - №6 Тестувальник не перевірив усі можливі ситуації.
 
 #### Основний сценарій:
-![Основний сценарій](http://www.plantuml.com/plantuml/svg/nPDDJW9158JtVOeNt2A9FxfmON332Rp01DgVP81afd4D-ACB8qOJ9d43yGGjC057mIkyle8diHwG0NMbCP75X7JL-wgwUoOV6YymjRAllAAf1fJXY2s_yeHxFEOH9ndoGYhMGfCQRY5OVd5jrqmDNiLVEFQrL_QrLzB1L3CBTXVSeQlZ-JIZ4tSuchfA-YIrFNBi6gxfJb52agwNgfWmK5A7LdTdgJl4Tr2bSfz7IjP4H2mK8Ptp65qlmOY9Xsm17U0vnd9BLQf6awyF3AqK2dlupN49OczaY2sv1e-a3Ljt0LABti_QQyhuaeBQc8Z-YBgkm1CiTecH3jhNtHNCeClVXXXbFVfrn4QMDhEqfP2GdbANOnx2XfF6dLgvL-8tIOJGmwJSMA9okTodNJ_mH1oSpEdV3lVBPYAILa86LIw5dr5H4da00EG-YCtvkpSHoRN_TwFofc7kFkqLBvr-S7nuzDDMsoglAoLyRny0)
+![Основний сценарій](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/main_scene.plum)
 
 ## Короткий огляд продукту
 

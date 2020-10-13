@@ -59,7 +59,7 @@
 **[ELK Stack](https://www.guru99.com/elk-stack-tutorial.html#:~:text=The%20ELK%20Stack%20is%20a,as%20processing%20and%20storing%20logs)** - являє собою набір з трьох продуктів з відкритим вихідним кодом - Elasticsearch, Logstash і Kibana. Всі вони розробляються, управляються і обслуговуються компанією Elastic. ELK Stack розроблений, щоб дозволити користувачам отримувати дані з будь-якого джерела в будь-якому форматі, а також шукати, аналізувати і візуалізувати ці дані в реальному часі.
 <br>
 
-![Діаграма роботи сервісу](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/naz-olegovich/media_content_analysis_system/tree/master/src/uml/main_scene.plum)
+![Діаграма роботи сервісу](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/main_scene.plum)
 
 <em>Шляхом поєднання цих технологій ми можемо досягнути нашої мети - розробити веб-сайт для професійнийного аналізу медіа контенту та забезпечити автоматичну обробку інформації.</em>
 

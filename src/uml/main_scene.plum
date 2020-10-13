@@ -1,0 +1,39 @@
+@startuml
+actor Admin
+actor User
+boundary "admin SPA(PWA)"
+boundary "Interactive Report"
+control "OUR SERVICE"
+database Storage
+control "Online BI"
+control "Data Fetch Subsys"
+control "Data Normalization Service"
+control "NLP Service"
+collections "Source Beats"
+collections "Media Source"
+Admin -> "OUR SERVICE"
+create "admin SPA(PWA)"
+"OUR SERVICE" -> "admin SPA(PWA)"
+Admin -> "admin SPA(PWA)"
+"admin SPA(PWA)" -> "OUR SERVICE"
+"OUR SERVICE" -> "Data Fetch Subsys"
+"Data Fetch Subsys" -> "Source Beats"
+"Source Beats" -> "Media Source"
+"Media Source" --> "Source Beats"
+"Sourse Beats" -> "Data Normalization Service"
+"Data Normalization Service" -> "Data Normalization Service"
+"Data Normalization Service" -> "NLP Service"
+"NLP Service" --> "Data Normalization Service"
+"Data Normalization Service" -> "Data Fetch Subsys"
+"Data Fetch Subsys" -> Storage: Push data
+...
+User -> "OUR SERVICE"
+"OUR SERVICE" -> "Online BI"
+create "Interactive Report"
+"Online BI" -> "Interactive Report"
+User -> "Interactive Report"
+"Interactive Report" -> "Online BI"
+"Online BI" -> "Online BI"
+"Online BI" --> "Interactive Report"
+"Interactive Report" --> User
+@enduml

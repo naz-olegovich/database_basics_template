@@ -1,0 +1,24 @@
+@startuml
+package "Огляд прецеденту" {
+    actor "Аналітик" as Analyst
+    usecase "Оформлення звіту" as SE_6 #eeffee
+    Analyst -u-> SE_6
+}
+
+
+
+usecase "Графічна візуалізація інформації" as SE_6.3  #eeffee
+usecase "Структурування інформації" as SE_6.4
+
+usecase "Побудова графіків" as SE_6.3.1
+usecase "Побудова діаграм" as SE_6.3.2
+usecase "Побудова таблиць" as SE_6.3.3
+
+
+
+SE_6.3 ..> SE_6:extends
+SE_6.4 ..> SE_6:extends
+SE_6.3.1 ..> SE_6.3:extends
+SE_6.3.2 ..> SE_6.3:extends
+SE_6.3.3 ..> SE_6.3:extends
+@enduml

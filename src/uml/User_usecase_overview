@@ -1,0 +1,13 @@
+@startuml
+package "Огляд прецеденту" {
+    actor "Користувач" as User 
+    usecase "Робота з результатами" as SE_4 #eeffee
+    User -u-> SE_4
+}
+usecase "Перегляд результатів" as SE_4.1
+usecase "Експорт публікацій" as SE_4.2 #eeffee
+usecase "Вибір формату" as SE_4.3
+SE_4.1 ..> SE_4:includes
+SE_4.2 ..> SE_4:extends
+SE_4.3 ..> SE_4.2:includes
+@enduml

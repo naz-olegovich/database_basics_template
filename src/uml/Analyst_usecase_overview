@@ -1,0 +1,13 @@
+@startuml
+package "Огляд прецеденту" {
+    actor "Аналітик" as Analyst
+    usecase "Робота із сховищем" as SE_5 #eeffee
+    Analyst -u-> SE_5
+}
+usecase "Перегляд сховища" as SE_5.1
+usecase "Задання ключових слів відбору" as SE_5.2
+
+
+SE_5.1 ..> SE_5:includes
+SE_5.2 ..> SE_5:extends
+@enduml

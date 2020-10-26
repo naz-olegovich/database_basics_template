@@ -62,50 +62,47 @@
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC003)
-
-#### Сценарій №4
-
-***ID:*** UC.023
-       
-***НАЗВА:*** Перегляд результатів
-
-***УЧАСНИКИ:*** 
-
-***ПЕРЕДУМОВИ:*** 
-
-***РЕЗУЛЬТАТ:*** 
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - EХ.001 --------
-
-***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-1.---------
-
-#### Сценарій №4
-
-***ID:*** UC.024
-       
-***НАЗВА:***  Вибір формату
-
-***УЧАСНИКИ:*** 
-
-***ПЕРЕДУМОВИ:*** 
-
-***РЕЗУЛЬТАТ:*** 
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - EХ.001 --------
-
-***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-1.---------
-
 <hr>
-
-
 
 <p align="center">
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/User_usecase_overview" />
 </p>
+#### Сценарій №4
+
+***ID:*** UC.004
+       
+***НАЗВА:*** Перегляд результатів
+
+***УЧАСНИКИ:*** Користувач, Система
+
+***ПЕРЕДУМОВИ:*** Наявність замовлення
+
+***РЕЗУЛЬТАТ:*** Звіт
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ - EХ.006 Звіт не зроблено
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC004)
+
+
+#### Сценарій №5
+
+***ID:*** UC.005
+       
+***НАЗВА:***  Вибір формату
+
+***УЧАСНИКИ:*** Користувач, Система
+
+***ПЕРЕДУМОВИ:*** Наявність звіту
+
+***РЕЗУЛЬТАТ:*** Звіт у вибраному форматі
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ Відсутні
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC005)
 <hr>
 
 

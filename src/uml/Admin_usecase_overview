@@ -7,11 +7,14 @@ package "Огляд прецеденту" {
 usecase "Налаштування підсистеми" as SE_7.1 #eeffee
 usecase "Запис іформації до сховища" as SE_7.2 
 
-usecase "Формування джерел" as SE_7.1.1
 usecase "Перегляд налаштувань" as SE_7.1.2
+
+usecase "Додати джерело" as SE_7.1.1.1
+usecase "Видалити джерело" as SE_7.1.1.2
 
 SE_7.1 ..> SE_7:extends
 SE_7.2 ..> SE_7:extends
-SE_7.1.1 ..> SE_7.1:extends
 SE_7.1.2 ..> SE_7.1:includes
+SE_7.1.1.1 ..> SE_7.1:extends
+SE_7.1.1.2 ..> SE_7.1:extends
 @enduml

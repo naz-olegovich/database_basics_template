@@ -176,58 +176,54 @@
 
 <hr>
 
-### Аналітик
+<p align="center">
+<img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Analyst_usecase_overview" />
+</p>
 
-#### Сценарій №1
+#### Сценарій №9
 
-***ID:*** UC.041
+***ID:*** UC009
        
 ***НАЗВА:*** Перегляд сховища
 
-***УЧАСНИКИ:*** Аналітик, сховище
+***УЧАСНИКИ:*** Аналітик, Cистема
 
-***ПЕРЕДУМОВИ:*** Інформація наявна у сховищи
+***ПЕРЕДУМОВИ:*** Наявність замовлення
 
-***РЕЗУЛЬТАТ:*** Знайдена необхідна інформація
+***РЕЗУЛЬТАТ:*** Перелік зібраної інформації
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - Відсутність інформації у сховищі
+ - Відсутні
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-1. Аналітик відкриває інтерфейс для роботи із сховищем
-2. Аналізує інформацію
-3. Відбирає інформацію для подальшої обробки
 
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC009)
 
-#### Сценарій №2
+#### Сценарій №10
 
-***ID:*** UC.042
+***ID:*** UC010
        
 ***НАЗВА:*** Задання ключових слів відбору
 
 ***УЧАСНИКИ:*** Аналітик, система
 
-***ПЕРЕДУМОВИ:*** Користувач чітко сформув свої вимоги
+***ПЕРЕДУМОВИ:*** Наявність замовлення
 
-***РЕЗУЛЬТАТ:***  Відфільтрована іонформація
+***РЕЗУЛЬТАТ:***  Відібрана інформація
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - Відсутність інформації у сховищі
- - Відсутність чітко сформульованих вимог користувача
+- Відсутні
+
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-1. Аналітик відкриває інтерфейс пошуку
-2. Аналізує вводить ключові слова відбору
-3. Аналітик отримує потрібну інформацію
 
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC010)
 
-<p align="center">
-<img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Analyst_usecase_overview" />
-</p>
 <hr>
 
 <p align="center">
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Analyst_usecase2_overview" />
 </p>
+
 <hr>
 

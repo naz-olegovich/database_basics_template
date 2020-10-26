@@ -225,5 +225,104 @@
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Analyst_usecase2_overview" />
 </p>
 
-<hr>
+#### Сценарій №11
+
+***ID:*** UC011
+       
+***НАЗВА:*** Структуруванння інформації
+
+***УЧАСНИКИ:*** Аналітик, система
+
+***ПЕРЕДУМОВИ:*** Наявність інформації
+
+***РЕЗУЛЬТАТ:***  Структурована інформація
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+- Відсутні
+
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC011)
+
+#### Сценарій №12
+
+***ID:*** UC012
+       
+***НАЗВА:*** Надіслати звіт
+
+***УЧАСНИКИ:*** Аналітик, система
+
+***ПЕРЕДУМОВИ:*** Наявність готового звіту
+
+***РЕЗУЛЬТАТ:***  Користувач отримав звіт
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+- Відсутні
+
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC012)
+
+#### Сценарій №13
+
+***ID:*** UC013
+       
+***НАЗВА:*** Побудувати графік
+
+***УЧАСНИКИ:*** Аналітик, система
+
+***ПЕРЕДУМОВИ:*** Наявність даних
+
+***РЕЗУЛЬТАТ:***  Відображений графік
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+- EX.008 Некорректно задані дані для побудови
+
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC013)
+
+#### Сценарій №14
+
+***ID:*** UC014
+       
+***НАЗВА:*** Побудовати діаграму
+
+***УЧАСНИКИ:*** Аналітик, система
+
+***ПЕРЕДУМОВИ:*** Наявність даних
+
+***РЕЗУЛЬТАТ:***  Відображена діаграма
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+- EX.008
+
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC014)
+
+#### Сценарій №15
+
+***ID:*** UC015
+       
+***НАЗВА:*** Побудувати таблицю
+
+***УЧАСНИКИ:*** Аналітик, система
+
+***ПЕРЕДУМОВИ:*** Наявність даних
+
+***РЕЗУЛЬТАТ:***  Відображена таблиця
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+- EX.008
+
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC015)
+
 

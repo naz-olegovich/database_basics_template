@@ -1,20 +1,15 @@
 @startuml
 package "Огляд прецеденту" {
     actor "Адміністратор" as Admin
-    usecase "Збір інформації" as SE_7 #eeffee
+    usecase "Налаштування підсистеми" as SE_7 #eeffee
     Admin -u-> SE_7
 }
-usecase "Налаштування підсистеми" as SE_7.1 #eeffee
-usecase "Запис іформації до сховища" as SE_7.2 
 
-usecase "Перегляд налаштувань" as SE_7.1.2
 
-usecase "Додати джерело" as SE_7.1.1.1
-usecase "Видалити джерело" as SE_7.1.1.2
-
-SE_7.1 ..> SE_7:extends
+usecase "Перегляд налаштувань" as SE_7.1
+usecase "Додати джерело" as SE_7.2
+usecase "Видалити джерело" as SE_7.3
+SE_7.1 ..> SE_7:includes
 SE_7.2 ..> SE_7:extends
-SE_7.1.2 ..> SE_7.1:includes
-SE_7.1.1.1 ..> SE_7.1:extends
-SE_7.1.1.2 ..> SE_7.1:extends
+SE_7.3 ..> SE_7:extends
 @enduml

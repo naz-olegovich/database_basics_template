@@ -1,5 +1,5 @@
 @startuml
-    actor "Користувач" as User
+actor "Користувач" as User
     actor "Гість" as Guest
     actor "Адміністратор" as Admin
     actor "Аналітик" as Analyst
@@ -17,8 +17,9 @@
 
     usecase "Робота із сховищем" as SE_5 #eeffee
     usecase "Оформлення звіту" as SE_6 #eeffee
+    usecase "Перегляд замовлень" as SE_7
 
-    usecase "Збір інформації" as SE_7 #eeffee
+    usecase "Збір інформації" as SE_8 #eeffee
    
     
     
@@ -30,6 +31,7 @@
     
     Analyst --> SE_5
     Analyst --> SE_6
+    Analyst --> SE_7
 
-    Admin --> SE_7
+    Admin --> SE_8
 @enduml

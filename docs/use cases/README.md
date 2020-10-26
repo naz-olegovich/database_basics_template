@@ -68,6 +68,7 @@
 <p align="center">
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/User_usecase_overview" />
 </p>
+
 #### Сценарій №4
 
 ***ID:*** UC.004
@@ -84,6 +85,7 @@
  - EХ.006 Звіт не зроблено
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC004)
 
 
@@ -103,74 +105,75 @@
  Відсутні
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC005)
 <hr>
 
 
-### Адміністратор
+<p align="center">
+<img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Admin_usecase_overview" />
+</p>
 
-#### Сценарій №1
+#### Сценарій №6
 
-***ID:*** UC.031
-       
-***НАЗВА:*** Формування джерел
-
-***УЧАСНИКИ:*** Адміністратор, Система
-
-***ПЕРЕДУМОВИ:*** Аналтік чітко зрозумів вимоги до пошуку
-
-***РЕЗУЛЬТАТ:*** Виконане налаштування системи пошуку
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - Задані недостовірні джерела
-
-***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-1.	Адміністратор отримує завдання
-2.	Адміністратор задає джерела інформації для пошуку необхідних даних
-3.	Адміністратор підтверджує всі налаштування системи
-
-
-#### Сценарій №2
-
-***ID:*** UC.032
+***ID:*** UC.006
        
 ***НАЗВА:*** Перегляд налаштувань
 
 ***УЧАСНИКИ:*** Адміністратор, Система
 
-***ПЕРЕДУМОВИ:*** Задані необхідні налаштування системи
+***ПЕРЕДУМОВИ:*** Відсутні
 
-***РЕЗУЛЬТАТ:*** Переглянуті налаштування системи
+***РЕЗУЛЬТАТ:*** Перелік джерел для пошуку
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - Система не налаштована
+- Відсутні 
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-1. Адміністратор переглядає налаштування системи
 
-#### Сценарій №3
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC006)
 
-***ID:*** UC.033
+
+#### Сценарій №7
+
+***ID:*** UC.007
        
-***НАЗВА:*** Запис інформації до сховища 
+***НАЗВА:*** Додати джерело
 
 ***УЧАСНИКИ:*** Адміністратор, Система
 
-***ПЕРЕДУМОВИ:*** Задані необхідні налаштування системи пошуку та наявна отримана іноформація
+***ПЕРЕДУМОВИ:*** Відсутні
 
-***РЕЗУЛЬТАТ:*** : Інформація записана до сховища
+***РЕЗУЛЬТАТ:*** Додане джерело для пошуку
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - відсутність інформації через не задані параметри пошуку
+- EХ.007 Джерела не існує
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC007)
+
+#### Сценарій №8
+
+***ID:*** UC.008
+       
+***НАЗВА:*** Видалити джерело
+
+***УЧАСНИКИ:*** Адміністратор, Система
+
+***ПЕРЕДУМОВИ:*** Джерело наявне
+
+***РЕЗУЛЬТАТ:*** : Джерело видалене
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ - Відсутні
  
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-1.	Адміністратор запускає систему
-2.	Система виконує пошук інформації
-3.	Інформація записується в базу даних
 
-<p align="center">
-<img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Admin_usecase_overview" />
-</p>
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC008)
+
+
+
 <hr>
 
 ### Аналітик

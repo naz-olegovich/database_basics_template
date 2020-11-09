@@ -6,10 +6,22 @@ package "Огляд прецеденту" {
 }
 
 
-usecase "Перегляд налаштувань" as SE_7.1
-usecase "Додати джерело" as SE_7.2
-usecase "Видалити джерело" as SE_7.3
+usecase "Перегляд налаштувань бітів" as SE_7.1
+usecase "Налаштувати Pipeline\n(Logstash)" as SE_7.2
+
+
+usecase "Створити екземпляр бітів" as SE_7.1.1
+usecase "Видалити екземпляр бітів" as SE_7.1.2
+
+usecase "Налаштувати портів входу і виходу" as SE_7.2.1
+usecase "Налаштувати фільтрів" as SE_7.2.2
+
 SE_7.1 ..> SE_7:includes
 SE_7.2 ..> SE_7:extends
-SE_7.3 ..> SE_7:extends
+
+
+SE_7.1.1 ..> SE_7.1:extends
+SE_7.1.2 ..> SE_7.1:extends
+SE_7.2.1 ..> SE_7.2:extends
+SE_7.2.2 ..> SE_7.2:extends
 @enduml

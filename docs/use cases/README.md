@@ -153,6 +153,7 @@
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC007)
 
+
 #### Сценарій №8
 
 ***ID:*** UC.008
@@ -190,7 +191,7 @@
  
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
 
-![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC008)
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC0081)
 
 
 #### Сценарій №11

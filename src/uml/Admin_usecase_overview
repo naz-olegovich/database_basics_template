@@ -13,8 +13,8 @@ usecase "Налаштувати Pipeline\n(Logstash)" as SE_7.2 #eeffee
 usecase "Створити екземпляр бітів" as SE_7.1.1
 usecase "Видалити екземпляр бітів" as SE_7.1.2
 
-usecase "Налаштувати портів входу і виходу" as SE_7.2.1
-usecase "Налаштувати фільтрів" as SE_7.2.2
+usecase "Налаштувати порти входу і виходу" as SE_7.2.1
+usecase "Налаштувати фільтри" as SE_7.2.2
 
 SE_7.1 ..> SE_7:includes
 SE_7.2 ..> SE_7:extends

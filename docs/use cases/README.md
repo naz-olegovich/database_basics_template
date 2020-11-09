@@ -13,12 +13,11 @@
 
 ***ПЕРЕДУМОВИ:*** Відстуні
 
-***РЕЗУЛЬТАТ:*** Новий обліковий запис
+***РЕЗУЛЬТАТ:*** Неактивований обліковий запис
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
  - EХ.001 Обліковий запис зареєстрований на введну пошту вже існує
  - EХ.002 Повторно введений пароль не збігається
- - EХ.003 Користувач не підтвердив пошту
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
 
@@ -28,6 +27,26 @@
 #### Сценарій №2
 
 ***ID:*** UC.002
+       
+***НАЗВА:*** Активація облікового запису
+
+***УЧАСНИКИ:*** Гість, Система
+
+***ПЕРЕДУМОВИ:*** Створений неактивований обліковий запис
+
+***РЕЗУЛЬТАТ:*** Активований обліковий запис
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ - Відсутні
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC001](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC0011)
+
+
+#### Сценарій №3
+
+***ID:*** UC.003
        
 ***НАЗВА:*** Створити замовлення
 
@@ -44,9 +63,9 @@
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC002)
 
-#### Сценарій №3
+#### Сценарій №4
 
-***ID:*** UC.003
+***ID:*** UC.004
        
 ***НАЗВА:*** Авторизація
 
@@ -69,15 +88,15 @@
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/User_usecase_overview" />
 </p>
 
-#### Сценарій №4
+#### Сценарій №5
 
-***ID:*** UC.004
+***ID:*** UC.005
        
 ***НАЗВА:*** Перегляд результатів
 
 ***УЧАСНИКИ:*** Користувач, Система
 
-***ПЕРЕДУМОВИ:*** Наявність замовлення
+***ПЕРЕДУМОВИ:*** Замовлення вибране
 
 ***РЕЗУЛЬТАТ:*** Звіт
 
@@ -89,15 +108,15 @@
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC004)
 
 
-#### Сценарій №5
+#### Сценарій №6
 
-***ID:*** UC.005
+***ID:*** UC.006
        
 ***НАЗВА:***  Вибір формату
 
 ***УЧАСНИКИ:*** Користувач, Система
 
-***ПЕРЕДУМОВИ:*** Наявність звіту
+***ПЕРЕДУМОВИ:*** Звіт вибрано
 
 ***РЕЗУЛЬТАТ:*** Звіт у вибраному форматі
 
@@ -114,17 +133,17 @@
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Admin_usecase_overview" />
 </p>
 
-#### Сценарій №6
+#### Сценарій №7
 
-***ID:*** UC.006
+***ID:*** UC.007
        
-***НАЗВА:*** Перегляд налаштувань
+***НАЗВА:*** Перегляд налаштувань бітів
 
 ***УЧАСНИКИ:*** Адміністратор, Система
 
 ***ПЕРЕДУМОВИ:*** Відсутні
 
-***РЕЗУЛЬТАТ:*** Перелік джерел для пошуку
+***РЕЗУЛЬТАТ:*** Перелік бітів
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 - Відсутні 
@@ -134,36 +153,37 @@
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC006)
 
 
-#### Сценарій №7
+#### Сценарій №8
 
-***ID:*** UC.007
+***ID:*** UC.008
        
-***НАЗВА:*** Додати джерело
+***НАЗВА:*** Створити екземпляр бітів
 
 ***УЧАСНИКИ:*** Адміністратор, Система
 
 ***ПЕРЕДУМОВИ:*** Відсутні
 
-***РЕЗУЛЬТАТ:*** Додане джерело для пошуку
+***РЕЗУЛЬТАТ:*** Створений біт
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
-- EХ.007 Джерела не існує
+- відстуні
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC007)
 
-#### Сценарій №8
 
-***ID:*** UC.008
+#### Сценарій №9
+
+***ID:*** UC.009
        
-***НАЗВА:*** Видалити джерело
+***НАЗВА:*** Видалити еземпляр бітів
 
 ***УЧАСНИКИ:*** Адміністратор, Система
 
-***ПЕРЕДУМОВИ:*** Джерело наявне
+***ПЕРЕДУМОВИ:*** Біт вибрано
 
-***РЕЗУЛЬТАТ:*** : Джерело видалене
+***РЕЗУЛЬТАТ:*** Біт видалено
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
  - Відсутні
@@ -173,6 +193,46 @@
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC008)
 
 
+#### Сценарій №10
+
+***ID:*** UC.010
+       
+***НАЗВА:*** Налаштувати фільтри
+
+***УЧАСНИКИ:*** Адміністратор, Система
+
+***ПЕРЕДУМОВИ:*** Відсутні
+
+***РЕЗУЛЬТАТ:*** Шаблони створені
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ - Відсутні
+ 
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC0081)
+
+
+#### Сценарій №11
+
+***ID:*** UC.011
+       
+***НАЗВА:*** Налаштувати порти входу і виходу
+
+***УЧАСНИКИ:*** Адміністратор, Система
+
+***ПЕРЕДУМОВИ:*** Відсутні
+
+***РЕЗУЛЬТАТ:*** Збережені дані
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ - Відсутні
+ 
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC0082)
+
+
 
 <hr>
 
@@ -180,9 +240,9 @@
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Analyst_usecase_overview" />
 </p>
 
-#### Сценарій №9
+#### Сценарій №12
 
-***ID:*** UC.009
+***ID:*** UC.012
        
 ***НАЗВА:*** Перегляд сховища
 
@@ -199,9 +259,9 @@
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC009)
 
-#### Сценарій №10
+#### Сценарій №13
 
-***ID:*** UC.010
+***ID:*** UC.013
        
 ***НАЗВА:*** Задання ключових слів відбору
 
@@ -225,9 +285,9 @@
 <img src = "http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/Analyst_usecase2_overview" />
 </p>
 
-#### Сценарій №11
+#### Сценарій №14
 
-***ID:*** UC.011
+***ID:*** UC.014
        
 ***НАЗВА:*** Структуруванння інформації
 
@@ -245,9 +305,9 @@
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC011)
 
-#### Сценарій №12
+#### Сценарій №15
 
-***ID:*** UC.012
+***ID:*** UC.015
        
 ***НАЗВА:*** Надіслати звіт
 
@@ -265,9 +325,9 @@
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC012)
 
-#### Сценарій №13
+#### Сценарій №16
 
-***ID:*** UC.013
+***ID:*** UC.016
        
 ***НАЗВА:*** Побудувати графік
 
@@ -285,9 +345,9 @@
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC013)
 
-#### Сценарій №14
+#### Сценарій №17
 
-***ID:*** UC.014
+***ID:*** UC.017
        
 ***НАЗВА:*** Побудовати діаграму
 
@@ -305,9 +365,9 @@
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC014)
 
-#### Сценарій №15
+#### Сценарій №18
 
-***ID:*** UC.015
+***ID:*** UC.018
        
 ***НАЗВА:*** Побудувати таблицю
 

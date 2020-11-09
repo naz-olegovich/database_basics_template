@@ -7,7 +7,7 @@ package "Огляд прецеденту" {
 
 
 usecase "Перегляд налаштувань бітів" as SE_7.1
-usecase "Налаштувати Pipeline\n(Logstash)" as SE_7.2
+usecase "Налаштувати Pipeline\n(Logstash)" as SE_7.2 #eeffee
 
 
 usecase "Створити екземпляр бітів" as SE_7.1.1

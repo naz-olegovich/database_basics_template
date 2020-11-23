@@ -1,20 +1,21 @@
 @startuml
 package "Огляд прецеденту" {
     actor "Адміністратор" as Admin
-    usecase "Налаштування підсистеми" as SE_7 #eeffee
+    usecase "Налаштування підсистеми\nпідсистеми збору" as SE_7 #eeffee
     Admin -u-> SE_7
 }
 
 
 usecase "Перегляд налаштувань бітів" as SE_7.1
-usecase "Налаштувати Pipeline\n(Logstash)" as SE_7.2 #eeffee
+usecase "Налаштувати фільтри\n(шаблонізатор GROK)" as SE_7.2
 
 
 usecase "Створити екземпляр бітів" as SE_7.1.1
-usecase "Видалити екземпляр бітів" as SE_7.1.2
+usecase "Редагувати екземпляр бітів" as SE_7.1.2
+usecase "Видалити екземпляр бітів" as SE_7.1.3
 
-usecase "Налаштувати порти входу і виходу" as SE_7.2.1
-usecase "Налаштувати фільтри" as SE_7.2.2
+
+
 
 SE_7.1 ..> SE_7:includes
 SE_7.2 ..> SE_7:extends
@@ -22,6 +23,5 @@ SE_7.2 ..> SE_7:extends
 
 SE_7.1.1 ..> SE_7.1:extends
 SE_7.1.2 ..> SE_7.1:extends
-SE_7.2.1 ..> SE_7.2:extends
-SE_7.2.2 ..> SE_7.2:extends
+SE_7.1.3 ..> SE_7.1:extends
 @enduml

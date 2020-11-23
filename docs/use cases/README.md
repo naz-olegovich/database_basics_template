@@ -197,7 +197,27 @@
 
 ***ID:*** UC.010
        
-***НАЗВА:*** Налаштувати фільтри
+***НАЗВА:*** Редагувати екземпляр бітів
+
+***УЧАСНИКИ:*** Адміністратор, Система
+
+***ПЕРЕДУМОВИ:*** Відсутні
+
+***РЕЗУЛЬТАТ:*** Збережено нову адресу джерела
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ - Відсутні
+ 
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+
+![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC0082)
+
+
+#### Сценарій №11
+
+***ID:*** UC.011
+       
+***НАЗВА:*** Налаштувати фільтри(шаблонізатоh Grok)
 
 ***УЧАСНИКИ:*** Адміністратор, Система
 
@@ -211,26 +231,6 @@
 ***ОСНОВНИЙ СЦЕНАРІЙ:*** 
 
 ![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC0081)
-
-
-#### Сценарій №11
-
-***ID:*** UC.011
-       
-***НАЗВА:*** Налаштувати порти входу і виходу
-
-***УЧАСНИКИ:*** Адміністратор, Система
-
-***ПЕРЕДУМОВИ:*** Відсутні
-
-***РЕЗУЛЬТАТ:*** Збережені дані
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
- - Відсутні
- 
-***ОСНОВНИЙ СЦЕНАРІЙ:*** 
-
-![UC002](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/naz-olegovich/media_content_analysis_system/master/src/uml/UC0082)
 
 
 

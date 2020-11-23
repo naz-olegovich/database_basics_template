@@ -19,7 +19,7 @@ actor "Користувач" as User
     usecase "Оформлення звіту" as SE_6 #eeffee
     usecase "Перегляд замовлень" as SE_7
 
-    usecase "Збір інформації" as SE_8 #eeffee
+    usecase "Налаштування підсистеми\nзбору інформації" as SE_8 #eeffee
    
     
     

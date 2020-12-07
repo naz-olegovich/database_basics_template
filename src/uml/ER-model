@@ -3,21 +3,18 @@ entity User <<ENTITY>> {
     email
     password
     username
-  }
-  
-  entity Access <<ENTITY>> {
+}
+
+
+
+entity Access <<ENTITY>> {
       role
-  }
-
-  entity System <<ENTITY>> {
-    
-  }
+}
+  
   
 
-
-
   
-  entity Beat <<ENTITY>> {
+entity Beat <<ENTITY>> {
     URL
     refresh time
     repeat
@@ -26,23 +23,23 @@ entity User <<ENTITY>> {
 
 
   entity Logstash <<ENTITY>> {
+    input
     filters 
+    output
   }
 
-    entity Storage <<ENTITY>> {
-     data
+  entity "Elasic Search" <<ENTITY>> {
+    
   }
+
+
+
 
 
   
     Access "(0,*)"--"(1,1)" User
-    Access "(0,*)"--"(1,1)" System :admin
-    Access "(0,*)"--"(1,1)" Storage :user
-
-    System "(1,1)"--"(0,*)" Beat
-    System "(1,1)"--"(1,1)" Logstash
-    System "(1,1)"--"(1,1)" Storage
-
+    Access "(0,*)"--"(1,1)" Logstash
+    Access "(0,*)"--"(1,1)" Beat
     Beat "(0,*)"--"(1,1)" Logstash
-    Logstash "(1,1)"--"(1,1)" Storage
+    Logstash "(0,*)"--"(1,1)" "Elasic Search"
 @enduml

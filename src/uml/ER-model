@@ -1,45 +1,66 @@
 @startuml
-entity User <<ENTITY>> {
-    email
-    password
-    username
-}
-
-
-
-entity Access <<ENTITY>> {
-      role
-}
-  
-  
-
-  
-entity Beat <<ENTITY>> {
-    URL
-    refresh time
-    repeat
+entity Beat {
+      id GUID: INT
+      interval: INT
+      sources: One-to-Many
+      type: INT
   }
   
-
-
-  entity Logstash <<ENTITY>> {
-    input
-    filters 
-    output
+  entity BeatType {
+      id: INT
+      name: TEXT
+      installer
   }
-
-  entity "Elasic Search" <<ENTITY>> {
+  
+  entity Source {
+      id: INT
+      url: TEXT
+      username: TEXT
+      password: PASSWORD
+      email: EMAIL
+      apikey: TEXT
+  }    
     
-  }
-
-
-
-
-
+  entity ServiceNode {
+      id: INT
+      url (internal system uri): TEXT
+      name: TEXT
+      description: TEXT
+      openAPI yaml
+    }
+    
+  entity ServiceChain {
+        id: INT
+        serviceNode: INT
+        next: INT
+    }
   
-    Access "(0,*)"--"(1,1)" User
-    Access "(0,*)"--"(1,1)" Logstash
-    Access "(0,*)"--"(1,1)" Beat
-    Beat "(0,*)"--"(1,1)" Logstash
-    Logstash "(0,*)"--"(1,1)" "Elasic Search"
+  entity Stream {
+      name: TEXT
+      description: TEXT
+      entryPoint: INT
+      beats: One-to-Many
+  }
+  
+  entity User {
+      id: INT
+      username: TEXT
+      password: PASSWORD
+      status(active/not active): STATUS
+      
+  }
+  
+  entity Access {
+      role: ROLE
+  }
+    
+  Beat "0,*" -- "1,1\ntype ( FB, VK etc.)" BeatType
+  Source "0,*"--"1,1" Beat
+  ServiceChain "(0,*)"-l- "(1,1)" ServiceNode
+  ServiceChain "0,*"->"0,1\nnext" ServiceChain
+  Stream  "0,*" -- "1,1\nentryPoint" ServiceChain
+  Beat "0,*" -- "1,1" Stream
+  User "0,*" -- "1,1" Access
+  Stream "0,*" -- "1,1" Access: admin
+  Beat "0,*" -- "1,1" Access: user
 @enduml

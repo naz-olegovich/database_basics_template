@@ -1,0 +1,114 @@
+@startuml
+entity Account
+  entity Account.id
+  entity Account.username
+  entity Account.password
+  entity Account.state
+  entity Account.email
+  entity inactive
+  entity active
+
+  Account.username -u-* Account
+  Account.password -u-* Account
+  Account.state -u-* Account
+  Account.id -u-* Account
+  Account.email -u-* Account
+
+  inactive --|> Account.state
+  active --|> Account.state
+  
+  entity Access
+
+  entity Role
+  entity Role.name
+  entity Role.description
+
+  object Admin #ffffff
+  object User #ffffff
+
+  Role.name --* Role
+  Role.description --* Role
+  Admin ..> Role: instance of
+  User ..> Role: instance of
+
+  entity Beat
+  entity Beat.id
+  entity Beat.interval
+  entity Beat.sources
+  entity Beat.type
+
+  Beat.id --* Beat
+  Beat.interval --* Beat
+  Beat.sources --* Beat
+  Beat.type --* Beat  
+  
+  entity BeatType
+  entity BeatType.id
+  entity BeatType.name
+  entity BeatType.installer
+
+  BeatType.id --* BeatType
+  BeatType.name --* BeatType
+  BeatType.installer --* BeatType
+  
+  entity Source
+  entity Source.id
+  entity Source.url
+  entity Source.username
+  entity Source.password
+  entity Source.email
+  entity Source.apikey
+
+  Source.id --* Source
+  Source.url --* Source
+  Source.username --* Source
+  Source.password --* Source
+  Source.email --* Source
+  Source.apikey --* Source
+    
+  entity ServiceNode
+  entity ServiceNode.id
+  entity ServiceNode.url
+  entity ServiceNode.name
+  entity ServiceNode.description
+  entity ServiceNode.openAPI
+
+  ServiceNode.id --* ServiceNode
+  ServiceNode.url --* ServiceNode
+  ServiceNode.name --* ServiceNode
+  ServiceNode.description --* ServiceNode
+  ServiceNode.openAPI --* ServiceNode
+    
+  entity ServiceChain
+  entity ServiceChain.id
+  entity ServiceChain.serviceNode
+  entity ServiceChain.next
+
+  ServiceChain.id --* ServiceChain
+  ServiceChain.serviceNode --* ServiceChain
+  ServiceChain.next --* ServiceChain
+  
+  entity Stream
+  entity Stream.name
+  entity Stream.description
+  entity Stream.entryPoint
+  entity Stream.beats
+
+  Stream.name --* Stream
+  Stream.description --* Stream
+  Stream.entryPoint --* Stream
+  Stream.beats --* Stream
+    
+  Account "0,*" -u- "1,1" Access
+
+  Role "0,*"-u-"1,1" Access
+
+  Beat "0,*" -- "1,1" BeatType
+  Source "0,*"--"1,1" Beat
+  ServiceNode "(0,*)"-d-"(1,1)" ServiceChain
+  ServiceChain "0,*"->"0,1\nnext" ServiceChain
+  ServiceChain "0,*" -d- "1,1" Stream
+  Beat "0,*" -- "1,1" Stream
+  Stream "0,*" -d- "1,1" Access: admin
+  Beat "0,*" -d- "1,1" Access: user
+@enduml

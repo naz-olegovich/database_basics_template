@@ -18,9 +18,9 @@ usecase "Побудувати таблиці" as SE_6.3.3
 
 
 
-SE_6.3 ..> SE_6:extends
-SE_6.4 ..> SE_6:extends
-SE_6.5 ..> SE_6:extends
+SE_6.3 ..> SE_6:includes
+SE_6.4 ..> SE_6:includes
+SE_6.5 ..> SE_6:includes
 SE_6.3.1 ..> SE_6.3:extends
 SE_6.3.2 ..> SE_6.3:extends
 SE_6.3.3 ..> SE_6.3:extends

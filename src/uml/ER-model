@@ -34,12 +34,11 @@ entity Beat <<ENTITY>> {
 
 
 
-
-
   
     Access "(0,*)"--"(1,1)" User
     Access "(0,*)"--"(1,1)" Logstash
     Access "(0,*)"--"(1,1)" Beat
     Beat "(0,*)"--"(1,1)" Logstash
     Logstash "(0,*)"--"(1,1)" "Elasic Search"
+    
 @enduml

@@ -17,13 +17,13 @@ const toTable =  (data, ...fields) => {
 
 
 (async () => {
-    const accountsList = await models.Account.findAll();
+    const accountsList = await models.account.findAll();
     console.log(chalk.green(`Accounts list`));
     console.log(toTable(accountsList, "id", "username", "password", "email", "status"));
 
-    const accessList = await models.Access.findAll({
+    const accessList = await models.access.findAll({
         include: [{
-            model: models.Account,
+            model: models.account,
             through: {
                 attributes: ['id']
             }

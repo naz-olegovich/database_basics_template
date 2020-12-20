@@ -1,7 +1,7 @@
 module.exports = {
-    DATABASE_NAME: 'Anasis',
+    DATABASE_NAME: 'mydb',
     DATABASE_USERNAME: 'root',
-    DATABASE_PASSWORD: '1234567890',
+    DATABASE_PASSWORD: '',
     DATABASE_HOST: 'localhost',
-    DATABASE_DRIVER: 'mysql',
+    DATABASE_DRIVER: 'mysql'
 };

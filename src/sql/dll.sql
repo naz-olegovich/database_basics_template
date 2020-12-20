@@ -20,7 +20,7 @@ USE `mydb` ;
 DROP TABLE IF EXISTS `mydb`.`account` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`account` (
-  `id` INT GENERATED ALWAYS AS () VIRTUAL,
+  `id` INT NOT NULL,
   `username` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
@@ -38,12 +38,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`access` (
   `role` VARCHAR(45) NOT NULL,
   `account_id` INT NOT NULL,
   PRIMARY KEY (`role`),
-  INDEX `fk_access_account1_idx` (`account_id` ASC) VISIBLE,
-  CONSTRAINT `fk_access_account1`
-    FOREIGN KEY (`account_id`)
-    REFERENCES `mydb`.`account` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  INDEX `fk_access_account1_idx` (`account_id` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -67,22 +62,12 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`servicechain` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`servicechain` (
-  `id` INT GENERATED ALWAYS AS () VIRTUAL,
+  `id` INT NOT NULL,
   `servicenode_id` INT NOT NULL,
-  `servicechain_id` INT NOT NULL,
+  `servicechain_id` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_servicechain_servicenode1_idx` (`servicenode_id` ASC) VISIBLE,
-  INDEX `fk_servicechain_servicechain1_idx` (`servicechain_id` ASC) VISIBLE,
-  CONSTRAINT `fk_servicechain_servicenode1`
-    FOREIGN KEY (`servicenode_id`)
-    REFERENCES `mydb`.`servicenode` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_servicechain_servicechain1`
-    FOREIGN KEY (`servicechain_id`)
-    REFERENCES `mydb`.`servicechain` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  INDEX `fk_servicechain_servicechain1_idx` (`servicechain_id` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -92,24 +77,14 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`stream` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`stream` (
-  `id` INT GENERATED ALWAYS AS () VIRTUAL,
+  `id` INT NOT NULL,
   `name` VARCHAR(45) NULL,
   `decription` VARCHAR(120) NULL,
   `entrypoint` INT NOT NULL,
   `access_role` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_stream_servicechain1_idx` (`entrypoint` ASC) VISIBLE,
-  INDEX `fk_stream_access1_idx` (`access_role` ASC) VISIBLE,
-  CONSTRAINT `fk_stream_servicechain1`
-    FOREIGN KEY (`entrypoint`)
-    REFERENCES `mydb`.`servicechain` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_stream_access1`
-    FOREIGN KEY (`access_role`)
-    REFERENCES `mydb`.`access` (`role`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  INDEX `fk_stream_access1_idx` (`access_role` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -119,7 +94,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`beattype` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`beattype` (
-  `id` INT GENERATED ALWAYS AS () VIRTUAL,
+  `id` INT NOT NULL,
   `name` VARCHAR(45) NULL,
   `installer` VARCHAR(45) NULL,
   PRIMARY KEY (`id`))
@@ -132,7 +107,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`beat` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`beat` (
-  `id` INT GENERATED ALWAYS AS () VIRTUAL,
+  `id` INT NOT NULL,
   `interval` INT NOT NULL,
   `type` INT NOT NULL,
   `stream_id` INT NOT NULL,
@@ -140,22 +115,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`beat` (
   PRIMARY KEY (`id`),
   INDEX `fk_beat_beattype_idx` (`type` ASC) VISIBLE,
   INDEX `fk_beat_stream1_idx` (`stream_id` ASC) VISIBLE,
-  INDEX `fk_beat_access1_idx` (`access_role` ASC) VISIBLE,
-  CONSTRAINT `fk_beat_beattype`
-    FOREIGN KEY (`type`)
-    REFERENCES `mydb`.`beattype` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_beat_stream1`
-    FOREIGN KEY (`stream_id`)
-    REFERENCES `mydb`.`stream` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_beat_access1`
-    FOREIGN KEY (`access_role`)
-    REFERENCES `mydb`.`access` (`role`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  INDEX `fk_beat_access1_idx` (`access_role` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -165,7 +125,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`source` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`source` (
-  `id` INT GENERATED ALWAYS AS () VIRTUAL,
+  `id` INT NOT NULL,
   `url` VARCHAR(200) NULL,
   `username` VARCHAR(45) NULL,
   `password` VARCHAR(45) NULL,
@@ -174,11 +134,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`source` (
   `beat_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_source_beat1_idx` (`beat_id` ASC) VISIBLE,
-  CONSTRAINT `fk_source_beat1`
-    FOREIGN KEY (`beat_id`)
-    REFERENCES `mydb`.`beat` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -229,7 +185,7 @@ USE `mydb`;
 INSERT INTO `mydb`.`servicechain` (`id`, `servicenode_id`, `servicechain_id`) VALUES (0, 1, 1);
 INSERT INTO `mydb`.`servicechain` (`id`, `servicenode_id`, `servicechain_id`) VALUES (1, 2, 2);
 INSERT INTO `mydb`.`servicechain` (`id`, `servicenode_id`, `servicechain_id`) VALUES (2, 3, 3);
-INSERT INTO `mydb`.`servicechain` (`id`, `servicenode_id`, `servicechain_id`) VALUES (3, 0, DEFAULT);
+INSERT INTO `mydb`.`servicechain` (`id`, `servicenode_id`, `servicechain_id`) VALUES (3, 0, NULL);
 
 COMMIT;
 

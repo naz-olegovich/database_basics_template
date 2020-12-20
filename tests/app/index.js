@@ -1,4 +1,5 @@
-const models = require('../../src/js/models');
+const access = require('../../src/js/models/access');
+const account = require('../../src/js/models/account');
 const Table = require("cli-table3");
 const _ = require("lodash-node");
 const chalk = require("chalk");
@@ -17,20 +18,17 @@ const toTable =  (data, ...fields) => {
 
 
 (async () => {
-    const accountsList = await models.account.findAll();
+    const accountsList = await account.Account.findAll();
     console.log(chalk.green(`Accounts list`));
     console.log(toTable(accountsList, "id", "username", "password", "email", "status"));
 
-    const accessList = await models.access.findAll({
+    const accessList = await access.Access.findAll({
         include: [{
-            model: models.account,
-            through: {
-                attributes: ['id']
-            }
+            model: account.Account,
+            attributes: ['id']
         }]
     });
+    
     console.log(chalk.green(`Accesses List`));
-
-    console.log(accessList.map(access => `Access: ${access.role}
-${toTable(access.Account, "role", "Access.dataValues.role")}`).join("\n"));
+    console.log(toTable(accessList, "role", "account_id"));
 })();

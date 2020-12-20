@@ -1,36 +1,41 @@
 const connection = require('../connection');
 const Sequilize = require('sequelize');
 
-class Account extends Sequilize.Model {}
+const Model = Sequilize.Model;
+
+class Account extends Model {}
 
 Account.init(
     {
         id: {
-            type: Sequilize.STRING(45),
+            type: Sequilize.STRING,
             primaryKey: true
         },
         username: {
-            type: Sequilize.STRING(45),
+            type: Sequilize.STRING,
             allowNull: false
         },
         password: {
-            type: Sequilize.STRING(45),
+            type: Sequilize.STRING,
             allowNull: false
         },
         email: {
-            type: Sequilize.STRING(45),
+            type: Sequilize.STRING,
             allowNull: false
         },
         status: {
-            type: Sequilize.BOOLEAN(),
+            type: Sequilize.BOOLEAN,
             allowNull: false
         }
     },
     {
         sequelize: connection,
         freezeTableName: true,
+        timestamps: false,
         modelName: 'Account'
     }
 );
 
-module.exports = Account
+module.exports = {
+    Account
+};
